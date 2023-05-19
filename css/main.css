@@ -203,6 +203,9 @@ header {
   background-color: transparent !important;
   border: #454549 solid 1px !important;
 }
+.features:hover{
+  color: white !important;
+}
 
 @media (max-width: 1200px) {
   .col-2 {
