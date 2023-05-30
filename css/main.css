@@ -19,6 +19,10 @@ header {
     max-width: 1170px;
   }
 }
+.fixed-top {
+  background-color: #151319;
+}
+
 /* Navbar section */
 .navbar {
   width: 100%;
@@ -81,7 +85,7 @@ header {
   align-self: center;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #454549;
+  background-color: #151319;
 }
 
 .row {
@@ -714,6 +718,7 @@ main {
   font-weight: 700;
   border: none;
   background-color: #008ed6;
+  white-space: nowrap;
 }
 
 @media (max-width: 1200px) {
@@ -1171,5 +1176,33 @@ main {
   .contact-form {
     width: 85%;
   }
+}
+footer {
+  height: 160px;
+  background-color: #151319;
+  margin-top: -10px;
+}
+footer .container {
+  flex-direction: column;
+  justify-content: center;
+}
+footer .container .row {
+  margin-top: 8px;
+  justify-content: center;
+}
+footer .container .row a i {
+  font-size: 20px;
+  margin: 0 15px;
+  color: #444247;
+}
+footer .container p {
+  margin: 19px 0 0 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+i:hover {
+  color: #008ed6 !important;
 }
 /*# sourceMappingURL=main.css.map */

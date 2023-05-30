@@ -36,19 +36,19 @@
                             <a class="nav-link js-scroll-trigger" href="#"><span>Home</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#"><span>Features</span></a>
+                            <a class="nav-link js-scroll-trigger" href="#product-overview"><span>Features</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#"><span>About</span></a>
+                            <a class="nav-link js-scroll-trigger" href="#details"><span>About</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#"><span>Testimonials</span></a>
+                            <a class="nav-link js-scroll-trigger" href="#quality-price"><span>Testimonials</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#"><span>Pricing</span></a>
+                            <a class="nav-link js-scroll-trigger" href="#quality-price__plans"><span>Pricing</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#"><span>Contact</span></a>
+                            <a class="nav-link js-scroll-trigger" href="#stay-in-touch"><span>Contact</span></a>
                         </li>
                     </ul>
                 </div>
@@ -56,7 +56,7 @@
         </div>
     </header>
     <main>
-        <section class="banner">
+        <section id="banner" class="banner">
             <div class="container">
                 <div class="row">
                     <div class="col-6 banner__text">
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="product-overview">
+        <section id="product-overview" class="product-overview">
             <div class="container product-overview__container">
                 <div class="product-overview__text">
                     <h6>product overview</h6>
@@ -121,7 +121,7 @@
                 </div>
             </div>
         </section>
-        <section class="details">
+        <section id="details" class="details">
             <div class="container details__container">
                 <div class="row row-1">
                     <div class="col col-img">
@@ -171,10 +171,10 @@
 
             </div>
         </section>
-        <section class="quality-price">
+        <section  class="quality-price">
             <div class="quality-price-bg">
                 <div class="container quality-price__container">
-                    <div class="quality-price__title">
+                    <div id="quality-price" class="quality-price__title">
                         <h6>quality has its price</h6>
                         <h2>Pricings & Plans</h2>
                         <span></span>
@@ -338,7 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="quality-price__plans">
+                <div id="quality-price__plans" class="quality-price__plans">
                     <div class="container quality-price__plans__container">
                         <div class="quality-price__plans__title">
                             <h6>quality has its price</h6>
@@ -409,7 +409,7 @@
                 </div>
             </div>
         </section>
-        <section class="stay-in-touch">
+        <section id="stay-in-touch" class="stay-in-touch">
             <div class="container stay-in-touch__container">
                 <div class="contacts">
                     <div class="contacts__title">
@@ -478,7 +478,18 @@
         </section>
     </main>
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <a href="https://www.behance.net/"><i class="bi bi-behance"></i></a>
+                <a href="https://dribbble.com/"><i class="bi bi-dribbble"></i></a>
+                <a href="https://twitter.com/?lang=uk"><i class="bi bi-twitter"></i></a>
+                <a href="https://uk-ua.facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p>
+                copyright © 2014 lucid onepage theme
+            </p>
+        </div>
     </footer>
 </div>
 
@@ -489,6 +500,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 
 <script src="js/script.js"></script>
 <script src="js/form-validation.js"></script>
