@@ -1,0 +1,144 @@
+.stay-in-touch {
+  background-color: #ededed;
+  height: 715px;
+
+  .stay-in-touch__container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .contacts {
+    width: 100%;
+    margin-bottom: 70px;
+
+    .contacts__title {
+      width: 100%;
+      text-align: center;
+
+      h6 {
+        @include titleSmall(41px 0 0 0);
+      }
+
+      h2 {
+        @include titleBig(-6px 0 28px 0);
+        color: #111111;
+      }
+
+      span {
+        @include blueDashes(url("../img/border-w.png"));
+        background-position: top left;
+        display: block;
+        height: 25px;
+        width: 44px;
+        margin: 0 auto;
+      }
+    }
+
+    .contacts__blocs {
+      margin-top: 29px;
+
+      .row {
+        display: flex;
+        justify-content: space-around;
+
+        .col {
+          text-align: center;
+
+          .icon i {
+            font-size: 32px;
+          }
+
+          .text {
+            margin-top: 18px;
+            padding-right: 3px;
+          }
+
+          .text a {
+            font-size: 18px;
+            line-height: 26px;
+            color: #999999;
+            font-weight: 400;
+            margin-bottom: 0;
+          }
+
+          #supp {
+            margin-left: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.map, .map-block {
+  position: relative;
+  z-index: -1;
+}
+
+.contact-form {
+  width: 66%;
+  height: 355px;
+  z-index: 3;
+  background-color: #151319;
+}
+
+@media (max-width: 768px) {
+  .contacts__blocs {
+    .row {
+      flex-direction: column;
+    }
+  }
+}
+
+/* Form */
+.contact-form {
+  form {
+    padding: 58px 83px 38px 65px;
+
+    #input-fields {
+      display: flex;
+
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    input, textarea {
+      border: #444247 solid 1px;
+      color: #444247;
+      background-color: transparent;
+      display: inline-block;
+      letter-spacing: -0.6px;
+    }
+
+    input {
+      height: 47px;
+      width: 304px;
+      padding-left: 17px;
+      margin-bottom: 23px;
+    }
+
+    textarea {
+      height: 188px;
+      width: 300px;
+      margin-left: 18px;
+      padding: 10px 0 0 17px;
+    }
+
+    .btn {
+      height: 50px;
+      width: 160px;
+      font-size: 14px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: 700;
+      border: none;
+      background-color: #008ed6;
+      float: right;
+      margin-right: 3px;
+    }
+  }
+}

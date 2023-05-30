@@ -504,20 +504,24 @@ main {
   }
 }
 .quality-price {
+  height: 1590px;
+}
+
+.quality-price-bg {
   background-image: url("../img/bg-price.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 640px;
 }
-.quality-price .quality-price__title {
+.quality-price-bg .quality-price__title {
   width: 100%;
   text-align: center;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-.quality-price .quality-price__title h6 {
+.quality-price-bg .quality-price__title h6 {
   font-size: 14px;
   letter-spacing: 1.7px;
   line-height: 48px;
@@ -526,14 +530,14 @@ main {
   font-weight: 900;
   margin: 46px 0 0 0;
 }
-.quality-price .quality-price__title h2 {
+.quality-price-bg .quality-price__title h2 {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.6px;
   margin: -6px 0 28px 0;
   color: #ffffff;
 }
-.quality-price .quality-price__title span {
+.quality-price-bg .quality-price__title span {
   background-image: url("../img/border-b.png");
   background-repeat: repeat-x;
   background-size: 44px 2px;
@@ -543,16 +547,16 @@ main {
   width: 44px;
   align-self: center;
 }
-.quality-price .quality-price__slider {
+.quality-price-bg .quality-price__slider {
   width: 100%;
   color: #ffffff;
   margin-top: 64px;
 }
-.quality-price .quality-price__slider .col-6 {
+.quality-price-bg .quality-price__slider .col-6 {
   padding-right: 20px;
   padding-left: 13px;
 }
-.quality-price .quality-price__slider .quality-price__slide .testimonials__text {
+.quality-price-bg .quality-price__slider .quality-price__slide .testimonials__text {
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
@@ -561,33 +565,33 @@ main {
   letter-spacing: -0.3px;
   margin-bottom: 21px;
 }
-.quality-price .quality-price__slider .quality-price__slide .testimonials__person {
+.quality-price-bg .quality-price__slider .quality-price__slide .testimonials__person {
   display: flex;
 }
-.quality-price .quality-price__slider .quality-price__slide .testimonials__person img {
+.quality-price-bg .quality-price__slider .quality-price__slide .testimonials__person img {
   width: 60px;
   height: 62px;
 }
-.quality-price .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text {
+.quality-price-bg .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 25px;
 }
-.quality-price .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text .name, .quality-price .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text .job {
+.quality-price-bg .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text .name, .quality-price-bg .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text .job {
   width: fit-content;
   display: inline-block;
   margin: 0;
 }
-.quality-price .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text .name {
+.quality-price-bg .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text .name {
   margin-top: -3px;
   margin-bottom: 7px;
 }
-.quality-price .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text .job {
+.quality-price-bg .quality-price__slider .quality-price__slide .testimonials__person .testimonials__person__text .job {
   font-size: 14px;
   letter-spacing: 0.4px;
 }
-.quality-price .quality-price__slider .carousel-item {
+.quality-price-bg .quality-price__slider .carousel-item {
   max-width: 100%;
 }
 
@@ -631,9 +635,6 @@ main {
   .testimonials__text {
     padding: 0 60px;
   }
-  .quality-price {
-    height: 750px;
-  }
   .carousel-inner {
     margin-bottom: 30px;
   }
@@ -645,9 +646,6 @@ main {
   .testimonials__text {
     padding: 0 20px;
   }
-  .quality-price {
-    height: 800px;
-  }
   .carousel-indicators {
     bottom: -50px;
   }
@@ -656,25 +654,12 @@ main {
   .testimonials__text {
     padding: 0;
   }
-  .quality-price {
-    height: 800px;
-  }
   .testimonials__text {
     font-size: 20px !important;
   }
   .quality-price .quality-price__slider .col-6 {
     padding-right: 15px;
     padding-left: 15px;
-  }
-}
-@media (max-width: 364px) {
-  .quality-price {
-    height: 870px;
-  }
-}
-@media (max-width: 310px) {
-  .quality-price {
-    height: 900px;
   }
 }
 .quality-price__bottom {
@@ -790,6 +775,59 @@ main {
   }
   .quality-price__bottom .quality-price__bottom__buttons .download {
     margin-right: 0;
+  }
+}
+@media (max-width: 993px) {
+  .quality-price-bg {
+    height: 690px;
+  }
+}
+@media (max-width: 895px) {
+  .quality-price-bg {
+    height: 725px;
+  }
+  .btn {
+    width: 120px !important;
+  }
+}
+@media (max-width: 810px) {
+  .quality-price-bg {
+    height: 755px;
+  }
+}
+@media (max-width: 768px) {
+  .quality-price {
+    height: 1990px;
+  }
+}
+@media (max-width: 644px) {
+  .quality-price-bg {
+    height: 800px;
+  }
+}
+@media (max-width: 610px) {
+  .quality-price {
+    height: 2100px;
+  }
+}
+@media (max-width: 610px) {
+  .quality-price {
+    height: 2100px;
+  }
+}
+@media (max-width: 575px) {
+  .quality-price {
+    height: 2930px;
+  }
+}
+@media (max-width: 357px) {
+  .quality-price-bg {
+    height: 845px;
+  }
+}
+@media (max-width: 357px) {
+  .quality-price-bg {
+    height: 865px;
   }
 }
 .quality-price__plans {
@@ -968,5 +1006,136 @@ main {
   .quality-price__plans .quality-price__plans__cards .row .card .card-footer p {
     margin-bottom: 20px;
   }
+}
+.stay-in-touch {
+  background-color: #ededed;
+  height: 715px;
+}
+.stay-in-touch .stay-in-touch__container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.stay-in-touch .contacts {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.stay-in-touch .contacts .contacts__title {
+  width: 100%;
+  text-align: center;
+}
+.stay-in-touch .contacts .contacts__title h6 {
+  font-size: 14px;
+  letter-spacing: 1.7px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #008ed6;
+  font-weight: 900;
+  margin: 41px 0 0 0;
+}
+.stay-in-touch .contacts .contacts__title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin: -6px 0 28px 0;
+  color: #111111;
+}
+.stay-in-touch .contacts .contacts__title span {
+  background-image: url("../img/border-w.png");
+  background-repeat: repeat-x;
+  background-size: 44px 2px;
+  background-position: top left;
+  display: block;
+  height: 25px;
+  width: 44px;
+  margin: 0 auto;
+}
+.stay-in-touch .contacts .contacts__blocs {
+  margin-top: 29px;
+}
+.stay-in-touch .contacts .contacts__blocs .row {
+  display: flex;
+  justify-content: space-around;
+}
+.stay-in-touch .contacts .contacts__blocs .row .col {
+  text-align: center;
+}
+.stay-in-touch .contacts .contacts__blocs .row .col .icon i {
+  font-size: 32px;
+}
+.stay-in-touch .contacts .contacts__blocs .row .col .text {
+  margin-top: 18px;
+  padding-right: 3px;
+}
+.stay-in-touch .contacts .contacts__blocs .row .col .text a {
+  font-size: 18px;
+  line-height: 26px;
+  color: #999999;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.stay-in-touch .contacts .contacts__blocs .row .col #supp {
+  margin-left: 3px;
+}
+
+.map, .map-block {
+  position: relative;
+  z-index: -1;
+}
+
+.contact-form {
+  width: 66%;
+  height: 355px;
+  z-index: 3;
+  background-color: #151319;
+}
+
+@media (max-width: 768px) {
+  .contacts__blocs .row {
+    flex-direction: column;
+  }
+}
+/* Form */
+.contact-form form {
+  padding: 58px 83px 38px 65px;
+}
+.contact-form form #input-fields {
+  display: flex;
+}
+.contact-form form #input-fields div {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input, .contact-form form textarea {
+  border: #444247 solid 1px;
+  color: #444247;
+  background-color: transparent;
+  display: inline-block;
+  letter-spacing: -0.6px;
+}
+.contact-form form input {
+  height: 47px;
+  width: 304px;
+  padding-left: 17px;
+  margin-bottom: 23px;
+}
+.contact-form form textarea {
+  height: 188px;
+  width: 300px;
+  margin-left: 18px;
+  padding: 10px 0 0 17px;
+}
+.contact-form form .btn {
+  height: 50px;
+  width: 160px;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  background-color: #008ed6;
+  float: right;
+  margin-right: 3px;
 }
 /*# sourceMappingURL=main.css.map */
