@@ -56,6 +56,7 @@
 
 .row-2 {
   .col {
+    padding-right: 0 !important;
     .details__description {
       p {
         padding: 2px 0 !important;
@@ -68,10 +69,8 @@
       padding: 0 !important;
 
       img {
-        margin-left: -20px;
-        margin-top: -8px;
-        width: 100%;
-        height: auto;
+        margin-right: 38px;
+        margin-top: -6px;
       }
     }
   }
@@ -88,7 +87,11 @@
   background-color: #f2f2f2;
   z-index: -1;
 }
-
+@media (max-width: 1200px) {
+  .row-2:before {
+    height: 658px;
+  }
+  }
 .details {
   .container {
     display: block;
@@ -96,7 +99,7 @@
     .row:nth-child(even) {
       flex-direction: row-reverse;
       margin-top: 75px;
-      padding: 70px 0;
+      padding: 70px 0 50px 0;
       background-color: #f2f2f2;
     }
   }
@@ -168,4 +171,3 @@
     }
   }
 }
-
