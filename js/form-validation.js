@@ -9,12 +9,12 @@ $(function() {
         },
         messages: {
             name: {
-                required: "This field is required",
+                required: "",
                 firstname: ""
             },
             email: {
-                required: "This field is required",
-                email: "Check your Email"
+                required: "",
+                email: ""
             }
         },
         submitHandler: function(form) {

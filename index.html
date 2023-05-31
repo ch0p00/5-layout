@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
     <title>Title</title>
 </head>
@@ -180,15 +181,9 @@
                         <span></span>
                     </div>
                     <div class="quality-price__slider">
-                        <div class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-slide-to="0" class="active"></li>
-                                <li data-slide-to="1"></li>
-                                <li data-slide-to="2"></li>
-                                <li data-slide-to="3"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active quality-price__slide">
+                        <div class="slider">
+                            <div class="slide">
+                                <div class="quality-price__slide">
                                     <div class="row">
                                         <div class="testimonials col-6">
                                             <p class="testimonials__text">
@@ -222,7 +217,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item quality-price__slide">
+                            </div>
+                            <div class="slide">
+                                <div class="quality-price__slide">
                                     <div class="row">
                                         <div class="testimonials col-6">
                                             <p class="testimonials__text">
@@ -256,7 +253,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item quality-price__slide">
+                            </div>
+                            <div class="slide">
+                                <div class="quality-price__slide">
                                     <div class="row">
                                         <div class="testimonials col-6">
                                             <p class="testimonials__text">
@@ -290,7 +289,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item quality-price__slide">
+                            </div>
+                            <div class="slide">
+                                <div class="quality-price__slide">
                                     <div class="row">
                                         <div class="testimonials col-6">
                                             <p class="testimonials__text">
@@ -308,6 +309,92 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="testimonials col-6">
+                                            <p class="testimonials__text">
+                                                A shoe is not only a design, but it's a part of your body language, the
+                                                way
+                                                you walk. The way you're going to move is quite dictated by your shoes.
+                                            </p>
+                                            <div class="testimonials__person">
+                                                <img src="img/avatar2.png" alt="testimonial2">
+                                                <div class="testimonials__person__text">
+                                                    <p class="name">Dean Winchester</p>
+                                                    <p class="job">UX DESIGNER, GOOGLE INC.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider1">
+                            <div class="slidead">
+                                <div class="quality-price__slide">
+                                    <div class="row">
+                                        <div class="testimonials col-6">
+                                            <p class="testimonials__text">
+                                                Once upon a time all the Rivers combined to protest against the action
+                                                of
+                                                the Sea in making their waters salt. “When we come to you,” said they to
+                                                the
+                                                Sea.
+                                            </p>
+                                            <div class="testimonials__person">
+                                                <img src="img/avatar1.png" alt="testimonial1">
+                                                <div class="testimonials__person__text">
+                                                    <p class="name">John Doe</p>
+                                                    <p class="job">CEO, THE RIVERS COMPANY</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slidead">
+                                <div class="quality-price__slide">
+                                    <div class="row">
+                                        <div class="testimonials col-6">
+                                            <p class="testimonials__text">
+                                                A shoe is not only a design, but it's a part of your body language, the
+                                                way
+                                                you walk. The way you're going to move is quite dictated by your shoes.
+                                            </p>
+                                            <div class="testimonials__person">
+                                                <img src="img/avatar2.png" alt="testimonial2">
+                                                <div class="testimonials__person__text">
+                                                    <p class="name">Dean Winchester</p>
+                                                    <p class="job">UX DESIGNER, GOOGLE INC.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slidead">
+                                <div class="quality-price__slide">
+                                    <div class="row">
+                                        <div class="testimonials col-6">
+                                            <p class="testimonials__text">
+                                                Once upon a time all the Rivers combined to protest against the action
+                                                of
+                                                the Sea in making their waters salt. “When we come to you,” said they to
+                                                the
+                                                Sea.
+                                            </p>
+                                            <div class="testimonials__person">
+                                                <img src="img/avatar1.png" alt="testimonial1">
+                                                <div class="testimonials__person__text">
+                                                    <p class="name">John Doe</p>
+                                                    <p class="job">CEO, THE RIVERS COMPANY</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slidead">
+                                <div class="quality-price__slide">
+                                    <div class="row">
                                         <div class="testimonials col-6">
                                             <p class="testimonials__text">
                                                 A shoe is not only a design, but it's a part of your body language, the
@@ -462,7 +549,7 @@
                                        required>
                                 <input type="text" class="form-control" placeholder="SUBJECT *" required>
                             </div>
-                            <textarea placeholder="MESSAGE *" class="form-control" required></textarea>
+                            <input type="text" placeholder="MESSAGE *" class="form-control" id="message" required>
                         </div>
                         <button class="btn">Send message</button>
                     </form>
@@ -501,8 +588,19 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script src="js/script.js"></script>
+<script src="js/slider.js"></script>
 <script src="js/form-validation.js"></script>
+<script>
+    function validateForm() {
+        var field = document.getElementById("message").value;
+        if (field === "") {
+            alert("");
+            return false;
+        }
+    }
+</script>
 </body>
 </html>

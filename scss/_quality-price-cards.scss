@@ -150,7 +150,7 @@
 
 @media (max-width: 992px) {
   .quality-price__plans {
-    margin-top: 110px;
+    margin-top: 0;
   }
   .quality-price__plans__cards {
     .row {
@@ -172,41 +172,42 @@
 
     }
   }
-  .quality-price__plans .quality-price__plans__cards .row .card .card-footer {
-    padding: 20px 10px 0 10px;
+  .card-footer {
+    padding: 20px 10px 0 10px !important;
   }
 }
 
-@media (max-width: 609px) {
-  .quality-price__plans {
-    margin-top: 190px;
-  }
-}
+
 
 @media (max-width: 426px) {
-  .quality-price__plans {
-    margin-top: 240px;
-  }
-  .quality-price__plans .quality-price__plans__cards .row .card .card-header {
+
+  .card-header {
     font-size: 20px;
     padding: 15px 0 0 0;
   }
-  .quality-price__plans .quality-price__plans__cards .row .card .card-body {
+  .card-body {
     padding: 15px 6px 0 0;
     border: #e0e0e0 solid 1px;
   }
-  .quality-price__plans .quality-price__plans__cards .row .card .card-body .price .price__num {
+   .price__num {
     font-size: 22px;
   }
-  .quality-price__plans .quality-price__plans__cards .row .card .card-body .price .price__month {
+  .price__month {
     font-size: 14px;
     padding-left: 6px;
     margin-bottom: 10px;
   }
-  .quality-price__plans .quality-price__plans__cards .row .card .card-body .price .price__num span {
+  .price__num span {
     font-size: 40px;
   }
-  .quality-price__plans .quality-price__plans__cards .row .card .card-footer p {
+   .card-footer p {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .contacts__title{
+    h6{
+      margin-top: 100px;
+    }
   }
 }

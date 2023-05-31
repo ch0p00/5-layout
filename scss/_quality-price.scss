@@ -42,7 +42,7 @@
 
     .col-6 {
       padding-right: 20px;
-      padding-left: 13px;
+      padding-left: 20px;
     }
 
     .quality-price__slide {
@@ -109,22 +109,6 @@
   bottom: -170px;
 }
 
-.carousel-indicators li {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0);
-  border: #3f383a solid 2px;
-  margin-right: 17px;
-}
-
-.carousel-indicators .active {
-  background-color: rgb(255, 255, 255);
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  border: none;
-}
 
 @media (max-width: 992px) {
   .testimonials {
@@ -172,7 +156,6 @@
 
 .quality-price__bottom {
   margin-top: 83px;
-  background-color: #151319;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -234,13 +217,16 @@
     top: 3219px;
   }
   .quality-price__bottom {
-    margin-top: 50px;
+    margin-top: 35px;
   }
 }
 
 @media (max-width: 993px) {
   .quality-price__bottom:before {
     display: none;
+  }
+  .quality-price__bottom {
+    background-color: #151319;
   }
   .quality-price {
     .container {
@@ -311,24 +297,17 @@
 
 @media (max-width: 993px) {
   .quality-price-bg {
-    height: 690px;
+    height: fit-content;
   }
 }
 
 @media (max-width: 895px) {
-  .quality-price-bg {
-    height: 725px;
-  }
+
   .btn {
     width: 120px !important;
   }
 }
 
-@media (max-width: 810px) {
-  .quality-price-bg {
-    height: 755px;
-  }
-}
 
 @media (max-width: 768px) {
   .quality-price {
@@ -336,11 +315,6 @@
   }
 }
 
-@media (max-width: 644px) {
-  .quality-price-bg {
-    height: 800px;
-  }
-}
 
 @media (max-width: 610px) {
   .quality-price {
@@ -360,14 +334,40 @@
   }
 }
 
-@media (max-width: 357px) {
-  .quality-price-bg {
-    height: 845px;
-  }
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
 }
 
-@media (max-width: 357px) {
-  .quality-price-bg {
-    height: 865px;
+.slick-dots button {
+  font-size: 0;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: #3f383a solid 2px;
+  margin-right: 17px;
+}
+
+.slick-active button {
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider1 {
+  display: none !important;
+}
+
+@media (max-width: 994px) {
+  .slider {
+    display: none;
+  }
+  .slider1 {
+    display: block !important;
   }
 }

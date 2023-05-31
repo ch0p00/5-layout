@@ -104,7 +104,7 @@
       }
     }
 
-    input, textarea {
+    input, #message {
       border: #444247 solid 1px;
       color: #444247;
       background-color: transparent;
@@ -119,7 +119,7 @@
       margin-bottom: 23px;
     }
 
-    textarea {
+    #message {
       height: 188px;
       width: 300px;
       margin-left: 18px;
@@ -160,7 +160,7 @@
         margin-bottom: 23px;
       }
 
-      textarea {
+      #message {
         height: 188px;
         width: 100%;
         margin-left: 0;
@@ -181,4 +181,8 @@
   .contact-form {
     width: 85%;
   }
+}
+
+label.error {
+  display: none !important;
 }

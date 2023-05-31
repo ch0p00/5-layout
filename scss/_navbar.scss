@@ -93,7 +93,11 @@
 .burger-menu.open .burger-menu__burger:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
+@media (max-width: 768px) {
+  .nav-item a {
+    padding-left: 0 !important;
+  }
+}
 @media (max-width: 576px) {
   .navbar-brand {
     a {
