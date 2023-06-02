@@ -96,34 +96,32 @@
 
     #input-fields {
       display: flex;
-
+      align-items: center;
       div {
         display: flex;
         flex-direction: column;
+        input{
+          border: #444247 solid 1px;
+          color: #444247;
+          background-color: transparent;
+          display: inline-block;
+          letter-spacing: -0.6px;
+          resize: none;
+          height: 47px;
+          width: 304px;
+          padding-left: 17px;
+          margin-bottom: 23px;
+        }
       }
     }
 
-    input, .textarea, #message {
-      border: #444247 solid 1px;
-      color: #444247;
-      background-color: transparent;
-      display: inline-block;
-      letter-spacing: -0.6px;
-      resize: none;
-    }
 
-    input {
-      height: 47px;
-      width: 304px;
-      padding-left: 17px;
-      margin-bottom: 23px;
-    }
-
-    #message {
-      height: 202px;
+    #message{
+      height: 188px;
       width: 300px;
       margin-left: 18px;
       padding: 10px 0 0 17px;
+      border: #444247 solid 1px !important;
     }
 
     .btn {
@@ -138,11 +136,17 @@
       background-color: #008ed6;
       float: right;
       margin-right: 3px;
-      margin-top: 20px;
     }
   }
 }
-
+.contact-form form #message {
+  height: 188px;
+  width: 300px;
+  margin-left: 18px;
+  padding: 10px 0 0 17px;
+  border: #444247 solid 1px !important;
+  margin-top: -19px;
+}
 @media (max-width: 993px) {
   .contact-form {
     height: fit-content;
@@ -163,7 +167,6 @@
 
       #message {
         height: 188px;
-        width: 100%;
         margin-left: 0;
       }
 
@@ -186,4 +189,8 @@
 
 label.error {
   display: none !important;
+}
+
+input.form-control {
+  background-color: transparent !important;
 }

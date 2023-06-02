@@ -1111,30 +1111,30 @@ main {
 }
 .contact-form form #input-fields {
   display: flex;
+  align-items: center;
 }
 .contact-form form #input-fields div {
   display: flex;
   flex-direction: column;
 }
-.contact-form form input, .contact-form form .textarea, .contact-form form #message {
+.contact-form form #input-fields div input {
   border: #444247 solid 1px;
   color: #444247;
   background-color: transparent;
   display: inline-block;
   letter-spacing: -0.6px;
   resize: none;
-}
-.contact-form form input {
   height: 47px;
   width: 304px;
   padding-left: 17px;
   margin-bottom: 23px;
 }
 .contact-form form #message {
-  height: 202px;
+  height: 188px;
   width: 300px;
   margin-left: 18px;
   padding: 10px 0 0 17px;
+  border: #444247 solid 1px !important;
 }
 .contact-form form .btn {
   height: 50px;
@@ -1148,7 +1148,15 @@ main {
   background-color: #008ed6;
   float: right;
   margin-right: 3px;
-  margin-top: 20px;
+}
+
+.contact-form form #message {
+  height: 188px;
+  width: 300px;
+  margin-left: 18px;
+  padding: 10px 0 0 17px;
+  border: #444247 solid 1px !important;
+  margin-top: -19px;
 }
 
 @media (max-width: 993px) {
@@ -1169,7 +1177,6 @@ main {
   }
   .contact-form form #message {
     height: 188px;
-    width: 100%;
     margin-left: 0;
   }
   .contact-form form .btn {
@@ -1187,6 +1194,10 @@ main {
 }
 label.error {
   display: none !important;
+}
+
+input.form-control {
+  background-color: transparent !important;
 }
 
 footer {
