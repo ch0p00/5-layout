@@ -189,9 +189,9 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
-  padding-bottom: 22px;
-  border: none;
+  padding: 10px 10px 44px 10px;
   background-color: #008ed6;
+  border: none;
 }
 .banner .banner__text {
   margin-top: 22px;
@@ -1092,7 +1092,6 @@ main {
 
 .map, .map-block {
   position: relative;
-  z-index: -1;
 }
 
 @media (max-width: 768px) {
@@ -1117,7 +1116,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.contact-form form input, .contact-form form #message {
+.contact-form form input, .contact-form form .textarea, .contact-form form #message {
   border: #444247 solid 1px;
   color: #444247;
   background-color: transparent;
@@ -1198,7 +1197,7 @@ footer .container {
   justify-content: center;
 }
 footer .container .row {
-  margin-top: 7px;
+  margin-top: 8px;
   justify-content: center;
 }
 footer .container .row a i {

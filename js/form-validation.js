@@ -5,6 +5,9 @@ $(function() {
             email: {
                 required: true,
                 email: true
+            },
+            textarea: {
+                required: true
             }
         },
         messages: {
@@ -13,6 +16,10 @@ $(function() {
                 firstname: ""
             },
             email: {
+                required: "",
+                email: ""
+            },
+            textarea: {
                 required: "",
                 email: ""
             }

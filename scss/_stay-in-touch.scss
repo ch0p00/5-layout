@@ -73,7 +73,6 @@
 
 .map, .map-block {
   position: relative;
-  z-index: -1;
 }
 
 
@@ -104,7 +103,7 @@
       }
     }
 
-    input, #message {
+    input, .textarea, #message {
       border: #444247 solid 1px;
       color: #444247;
       background-color: transparent;
