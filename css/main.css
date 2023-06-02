@@ -1122,6 +1122,7 @@ main {
   background-color: transparent;
   display: inline-block;
   letter-spacing: -0.6px;
+  resize: none;
 }
 .contact-form form input {
   height: 47px;
@@ -1130,7 +1131,7 @@ main {
   margin-bottom: 23px;
 }
 .contact-form form #message {
-  height: 188px;
+  height: 202px;
   width: 300px;
   margin-left: 18px;
   padding: 10px 0 0 17px;
@@ -1147,6 +1148,7 @@ main {
   background-color: #008ed6;
   float: right;
   margin-right: 3px;
+  margin-top: 20px;
 }
 
 @media (max-width: 993px) {
